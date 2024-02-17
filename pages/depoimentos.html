@@ -31,8 +31,8 @@
             <div class="menu">
                 <br>
                 <p><a href="home.html">HOME</a></p>
-                <p><a href="sobre.html" id="pagina-atual">SOBRE NÓS</a></p>
-                <p><a href="depoimentos.html">DEPOIMENTOS</a></p>
+                <p><a href="sobre.html">SOBRE NÓS</a></p>
+                <p><a href="depoimentos.html" id="pagina-atual">DEPOIMENTOS</a></p>
                 <p><a href="donatarias.html">PRECISO DE DOAÇÕES</a></p>
                 <p><a href="doar.html" id="doar">DESEJO DOAR</a></p>
                 <p><a href="contato">CONTATO</a></p>
@@ -51,27 +51,46 @@
             <div class="cabecalho">
                 <h1>Plataforma para Doação de <br><b>ALIMENTOS</b></h1>
             </div>
-            <div class="sobre">
+            <div class="depoimentos">
                 <div class="titulo-secao">
-                    <hr id="sobre">
-                    <h2>SOBRE NÓS</h2>
+                    <hr id="depoimentos">
+                    <h2>DEPOIMENTOS</h2>
                 </div>
                 <div class="conteudo-secao">
-                    <div class="subsecao">
+                    <div class="subsecao" id="depoimentoContainer">
                         <p class="mb3">
-                            <b>Compartilhando Nutrição, Cultivando Solidariedade.</b>
-                            <br><br>
-                            Surgimos de uma iniciativa da Associação Capixaba de Tecnologia, em conjunto com o Instituto Federal do Espírito Santo, criador do projeto "Reprograme-se", que tem por finalidade oferecer ensino de qualidade gratuito para interessados em aprender sobre tecnologia. Somos uma Organização Não Governamental (ONG), inscrita no CNPJ sob o n. XX.XXX.XXX/XXXX-XX. 
-                            <br><br>
-                            <b>Impacto social:</b>
-                            Nosso objetivo sempre foi reduzir o desperdício de alimentos e ajudar àqueles que precisam. 
-                            Nossa sede fica em Vitória, no Espírito Santo, mas ao longo de nossa história já alcançamos mais de XXXX instituições, impactando indiretamente XXX famílias, em todos os estados do Brasil. Iniciamos nosso trabalho por aqui mesmo, no Espírito Santo, mas já contamos com colaboradores em quase todos os estados do nosso país e esperamos que esse número cresça ainda este ano. 
-                            <br><br>
-                            No link abaixo você terá acesso ao nosso relatório de impacto e à nossa prestação de contas. Obrigado por nos ajudar e por confiar no nosso trabalho!
-                            <br><br>
-                            <a href="#"><h3 id="link">Relatório de Impacto e Prestação de Contas</h3></a>
+                            
                         </p>
                     </div>
+                </div>
+                <h2>Deixe seu depoimento:</h2>
+                <br>
+                <div class="form">
+                    <form class="mt3" id="formDepoimento">
+                        <div class="mb3">
+                            <label>
+                                Nome*:<br>
+                                <input type="text" id="nome" placeholder="Fulano de Tal">
+                            </label>
+                        </div>
+                        <br>
+                        <div class="mb3">
+                            <label>
+                                E-mail*:<br>
+                                <input type="email" id="email" placeholder="fulano@email.com">
+                            </label>
+                        </div>
+                        <br>
+                        <div class="mb3">
+                            <label>
+                                Depoimento*:<br>
+                                <textarea rows="5" id="depoimento"></textarea>
+                            </label>
+                        </div>
+                        <div>
+                            <a href="#" class="btn" id="enviarDepoimento">Enviar</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
