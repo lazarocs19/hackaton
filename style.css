@@ -1,0 +1,63 @@
+.navbar img {
+    width: 50px;
+}
+
+.navbar a,
+h3,
+.navbar span {
+    color: #44BBA4;
+}
+
+.sobre img {
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.sobre p,
+.sobre h3 {
+    text-align: center;
+}
+
+.sobre h3 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+
+.depoimentos {
+    background-color: #44BBA4;
+}
+
+.depoimentos h3 {
+    color: #E7BB41;
+}
+
+.depoimentos p {
+    color: white;
+}
+
+.footer,
+.footer a {
+    color: #E7E5DF;
+}
+
+.footer {
+    min-height: 300px;
+    background-color: #E7BB41;
+    box-shadow: 5px 5px 10px black;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a {
+    font-size: large;
+}
+
+.footer img {
+    min-width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    object-fit: fill;
+}
