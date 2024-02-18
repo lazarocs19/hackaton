@@ -1,3 +1,15 @@
+a, p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#p-inicial {
+    text-align: justify;
+}
+
 .navbar img {
     width: 50px;
 }
@@ -8,16 +20,15 @@ h3,
     color: #44BBA4;
 }
 
+.navbar a {
+    font-size: 22px;
+}
+
 .sobre img {
     width: 350px;
     height: 350px;
     border-radius: 30px;
     object-fit: cover;
-}
-
-.sobre p,
-.sobre h3 {
-    text-align: center;
 }
 
 .sobre h3 {
@@ -31,7 +42,7 @@ h3,
 }
 
 .depoimentos h3 {
-    color: #E7BB41;
+    color: #393E41;
 }
 
 .depoimentos p {
@@ -52,7 +63,6 @@ h3,
     color: dark;
     border-style: solid;
     border-color: white;
-    font-size: 20px;
     padding: 1vw;
 }
 
@@ -81,12 +91,8 @@ h3,
     z-index: 2;
 }
 
-.footer a {
-    font-size: large;
-}
-
 .footer img {
-    min-width: 200px;
+    width: 200px;
     height: 200px;
     border-radius: 30px;
     object-fit: fill;

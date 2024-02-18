@@ -48,7 +48,91 @@
     <div class="container">
         <h1>Formulário para doação:</h1>
         <hr>
-        <h3>Importante: fazer o cadastramento do alimento também.</h3>
+        <form>
+            <div class="">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome-doador" class="form-label">Doador</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu nome ou Razão Social aqui..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço Completo</label>
+                        <textarea name="" id="endereco" class="form-control" placeholder="Seu Endereço completo, incluindo CEP..." required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" class="form-control" placeholder="Seu endereço de e-mail..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" id="telefone" class="form-control" placeholder="Seu telefone de contato (xx) xxxxx-xxxx..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="receptor" class="form-label">Beneficiário</label>
+                        <select class="form-select" required>
+                            <option value="">Selecione para quem você deseja doar...</option>
+                            <option value="E1">Entidade01</option>
+                            <option value="E2">Entidade02</option>
+                            <option value="E3">Entidade03</option>
+                            <option value="E4">Entidade04</option>
+                            <option value="E5">Entidade05</option>
+                            <option value="E6">Entidade06</option>
+                            <option value="E7">Entidade07</option>
+                            <option value="E8">Entidade08</option>
+                        </select>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-10">
+                                <label for="receptor" class="form-label">Alimento</label>
+                                <select class="form-select" required>
+                                    <option value="">Selecione o alimento que deseja doar...</option>
+                                    <option value="A1">Alimento01</option>
+                                    <option value="A2">Alimento02</option>
+                                    <option value="A3">Alimento03</option>
+                                    <option value="A4">Alimento04</option>
+                                    <option value="A5">Alimento05</option>
+                                    <option value="A6">Alimento06</option>
+                                    <option value="A7">Alimento07</option>
+                                    <option value="A8">Alimento08</option>
+                                </select>
+                        </div>
+                        <div class="col-12 col-md-2 align-items-end d-flex">
+                            <span class="btn btn-primary w-100 mt-md-0 mt-3" data-bs-toggle="offcanvas" data-bs-target="#painel">Cadastrar Alimento</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Data de Validade do Alimento</label>
+                        <input type="date" id="data" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="qtde-alimento" class="form-label">Quantidade que deseja doar</label>
+                        <input type="text" id="qtde" class="form-control" placeholder="Quantidade que você deseja doar..." required>
+                    </div>
+                    <button type="submit" class="btn">Confirmar Doação</button>
+                </form>
+            </div>
+        </form>
+
+        <div class="offcanvas offcanvas-end" id="painel" tabindex="-1" style="--bs-offcanvas-width:60vw">
+            <div class="offcanvas-header">
+                <h3 class="display-6 offcanvas-title">Cadastro de Alimentos</h3>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <form>
+                <div class="col-12 col-md-10 offcanvas-body">
+                    <div class="mb-3">
+                        <label for="nome-alimento" class="form-label">Descrição do Alimento</label>
+                        <input type="text" id="nome-alimento" class="form-control" placeholder="Nome do alimento..." required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="link-img" class="form-label">Imagem do alimento (link)</label>
+                        <input type="text" id="link-img-alimento" class="form-control" placeholder="Link da imagem do alimento..." required>
+                    </div>
+                <button type="submit" class="btn">Cadastrar Alimento</button>
+            </form>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- Footer -->

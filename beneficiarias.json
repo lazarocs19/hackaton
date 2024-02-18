@@ -1,0 +1,94 @@
+{
+    "instituicoes": [
+      {
+        "ID": 1,
+        "Nome": "Instituicao01",
+        "Descricao": "Descricao Completa da Instituicao01",
+        "Email": "instituicao01@email.com",
+        "Telefone": "(99) 99999-9999",
+        "EnderecoCompleto": "Rua Terere, n. 15, Centro, Cidade X, CEP: 99.999-99, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 2,
+        "Nome": "Instituicao02",
+        "Descricao": "Descricao Completa da Instituicao02",
+        "Email": "instituicao02@email.com",
+        "Telefone": "(88) 88888-8888",
+        "EnderecoCompleto": "Av. Principal, n. 456, Sala 202, Bairro do Sol, Cidade Y, CEP: 88.888-88, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 3,
+        "Nome": "Instituicao03",
+        "Descricao": "Descricao Completa da Instituicao03",
+        "Email": "instituicao03@email.com",
+        "Telefone": "(77) 77777-7777",
+        "EnderecoCompleto": "Praça da Liberdade, n. 789, Bairro da Paz, Cidade Z, CEP: 77.777-77, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 4,
+        "Nome": "Instituicao04",
+        "Descricao": "Descricao Completa da Instituicao04",
+        "Email": "instituicao04@email.com",
+        "Telefone": "(66) 66666-6666",
+        "EnderecoCompleto": "Rua das Flores, n. 101, Jardim Botânico, Cidade W, CEP: 66.666-66, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 5,
+        "Nome": "Instituicao05",
+        "Descricao": "Descricao Completa da Instituicao05",
+        "Email": "instituicao05@email.com",
+        "Telefone": "(55) 55555-5555",
+        "EnderecoCompleto": "Avenida dos Sonhos, n. 222, Bairro dos Anjos, Cidade V, CEP: 55.555-55, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 6,
+        "Nome": "Instituicao06",
+        "Descricao": "Descricao Completa da Instituicao06",
+        "Email": "instituicao06@email.com",
+        "Telefone": "(44) 44444-4444",
+        "EnderecoCompleto": "Travessa das Estrelas, n. 333, Bairro Celestial, Cidade U, CEP: 44.444-44, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 7,
+        "Nome": "Instituicao07",
+        "Descricao": "Descricao Completa da Instituicao07",
+        "Email": "instituicao07@email.com",
+        "Telefone": "(33) 33333-3333",
+        "EnderecoCompleto": "Alameda das Maravilhas, n. 444, Bairro Encantado, Cidade T, CEP: 33.333-33, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 8,
+        "Nome": "Instituicao08",
+        "Descricao": "Descricao Completa da Instituicao08",
+        "Email": "instituicao08@email.com",
+        "Telefone": "(22) 22222-2222",
+        "EnderecoCompleto": "Passeio das Ilusões, n. 555, Bairro Imaginário, Cidade S, CEP: 22.222-22, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 9,
+        "Nome": "Instituicao09",
+        "Descricao": "Descricao Completa da Instituicao09",
+        "Email": "instituicao09@email.com",
+        "Telefone": "(33) 33333-3333",
+        "EnderecoCompleto": "Alameda das Garrafas, n.667, Bairro Garrafao, Cidade T, CEP: 33.333-33, UF",
+        "Imagem": ""
+      },
+      {
+        "ID": 10,
+        "Nome": "Instituicao10",
+        "Descricao": "Descricao Completa da Instituicao10",
+        "Email": "instituicao10@email.com",
+        "Telefone": "(22) 22222-2222",
+        "EnderecoCompleto": "Passeio das Ilusões, n. 555, Bairro Imaginário, Cidade S, CEP: 22.222-22, UF",
+        "Imagem": ""
+      }   
+    ]
+  }
