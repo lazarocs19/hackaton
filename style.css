@@ -38,6 +38,36 @@ h3,
     color: white;
 }
 
+#inst-beneficiadas a {
+    text-decoration: none;
+    color: #000;
+}
+
+#inst-beneficiadas a:hover {
+    color:  #44BBA4;
+}
+
+#inst-beneficiadas .btn {
+    background-color: white;
+    color: dark;
+    border-style: solid;
+    border-color: white;
+    font-size: 20px;
+    padding: 1vw;
+}
+
+.btn {
+    background-color: #44BBA4;
+    color: white;
+    border-style: solid;
+    border-color: #44BBA4;
+}
+
+.btn:hover {
+    background-color: #153b34;
+    color: white;
+}
+
 .footer,
 .footer a {
     color: #E7E5DF;
