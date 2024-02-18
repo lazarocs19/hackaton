@@ -158,16 +158,34 @@
         <p>Estamos à disposição para atendê-los. Entre já em contato, informe suas dúvidas, sugestões e reclamações.</p>
 
         <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <div class="">
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu Nome Completo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="assunto" class="form-label">Assunto</label>
+                        <select class="form-select" required>
+                            <option value="">Selecione um assunto...</option>
+                            <option value="">Envio de depoimento</option>
+                            <option value="">Sugestões</option>
+                            <option value="">Dúvidas</option>
+                            <option value="">Reclamações</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea name="" id="mensagem" class="form-control" placeholder="Sua Mensagem para Nós..." required></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
         </form>
-        
-        <p class="mt-5">Nos siga nas redes sociais!</p>
-        <a href="https://pt-br.facebook.com/"><span class="bi bi-facebook fs-1 me-2"></span></a>
-        <a href="https://www.instagram.com/"><span class="bi bi-instagram fs-1 me-2"></span></a>
-        <a href="https://twitter.com/home?lang=en"><span class="bi bi-twitter-x fs-1"></span></a>
     </div>
 
     <!-- Footer -->
