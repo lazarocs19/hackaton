@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Carrega o conteúdo do arquivo beneficiarias.json usando Fetch
-    fetch('beneficiarias.json')
+    // Carrega o conteúdo do arquivo Receptoras.json usando Fetch
+    fetch('Receptoras.json')
         .then(response => response.json())
         .then(data => {
             setLocalStorage(data);
