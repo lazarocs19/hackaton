@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 setLocalStorage(data);
                 bd_instituicoes = data;
+                atualizarTabela(bd_instituicoes);
             })
             .catch(error => console.error('Erro ao carregar o arquivo JSON das entidades receptoras:', error));        
-    }
-    atualizarTabela(bd_instituicoes);
+    } else {
+        atualizarTabela(bd_instituicoes);
+    };
 });
 
 const btnCadastrarBeneficiaria = document.getElementById("btnCadastrarBeneficiaria");

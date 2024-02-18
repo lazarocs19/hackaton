@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 setLocalStorageAlimentos(data);
+                bd_alimentos = data;
+                atualizarTabelaAlimentos(bd_alimentos);
             })
             .catch(error => console.error('Erro ao carregar o arquivo JSON dos alimentos:', error));
+    } else {
+        atualizarTabelaAlimentos(bd_alimentos);
     }
-    atualizarTabelaAlimentos(bd_alimentos);
     
     // Ler JSON instituicoes
     let bd_instituicoes = getLocalStorageInstituicoes();
@@ -19,10 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 setLocalStorageInstituicoes(data);
                 bd_instituicoes = data;
+                atualizarTabelaInstituicoes(bd_instituicoes);
             })
             .catch(error => console.error('Erro ao carregar o arquivo JSON das entidades receptoras:', error));
-    }
-    atualizarTabelaInstituicoes(bd_instituicoes);
+    } else {
+        atualizarTabelaInstituicoes(bd_instituicoes);
+    };
 
 });
 
