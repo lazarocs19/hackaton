@@ -1,0 +1,76 @@
+{
+  "instituicoes": [
+    {
+      "ID": 1,
+      "Nome": "Ação da Cidadania",
+      "Descricao": "Fundada pelo sociólogo Herbert de Souza, o Betinho, a Ação da Cidadania nasceu em 1993, formando uma imensa rede de mobilização de alcance nacional para ajudar 32 milhões de brasileiros que, segundo dados do Ipea, estavam abaixo da linha da pobreza. Criada no auge do Movimento pela Ética na Política, a Ação da Cidadania contra a Fome, a Miséria e pela Vida se transformou no movimento social mais reconhecido do Brasil. Seu principal eixo de atuação é uma extensa rede de mobilização formada por comitês locais da sociedade civil organizada, em sua maioria compostos por lideranças comunitárias, mas com participação de todos os setores sociais.",
+      "Email": "acaodacidadania@email.com",
+      "Telefone": "(99) 99999-1111",
+      "EnderecoCompleto": "Rua da Solidariedade, n. 25, Centro, Cidade A, CEP: 11.111-11, UF",
+      "Imagem": "https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/3737110/29537_265773.png"
+    },
+    {
+      "ID": 2,
+      "Nome": "Amigos do Bem",
+      "Descricao": "Contribua para mudar a realidade das famílias que enfrentam dificuldades em meio à crise econômica, social e sanitária no Brasil. Infelizmente, as regiões mais carentes e isoladas, como o Nordeste, têm sido as mais afetadas, com mais de 20% da população sofrendo diariamente com a fome. Mas você pode ajudar a mudar essa realidade! Com a sua doação, podemos levar esperança para milhares de famílias que lutam para sobreviver. Alimentos, água potável, atendimento médico e outros itens essenciais farão uma grande diferença na vida dessas pessoas. Não espere mais para agir! Faça a sua parte e contribua para levar um pouco mais de dignidade e qualidade de vida para aqueles que mais precisam. O Bem que você faz se multiplica. Você pode fazer a diferença!",
+      "Email": "amigosdobem@email.com",
+      "Telefone": "(99) 99999-2222",
+      "EnderecoCompleto": "Avenida da Ajuda, n. 30, Bairro B, Cidade B, CEP: 22.222-22, UF",
+      "Imagem": "https://www.amigosdobem.org/wp-content/uploads/2021/03/Novo-LOGO-01.png"
+    },
+    {
+      "ID": 3,
+      "Nome": "Instituto Stop Hunger",
+      "Descricao": "Nós acreditamos que Qualidade de Vida começa quando todas as necessidades básicas das pessoas são atendidas. Por isso, em 1996, colaboradores da Sodexo dos Estados Unidos, perceberam que algumas crianças de região menos favorecida de Boston, não conseguiam ter uma alimentação nutritiva todos os dias para se alimentar, durante as férias de verão, período em que as cantinas escolares estavam fechadas. Decidiram, por conta própria, servir refeições gratuitas nos bairros mais pobres da cidade. E assim nasceu o movimento Stop Hunger.      Atualmente, o Stop Hunger é uma força de liderança global na luta contra a fome, sustentavelmente, e com mais de 26 anos de compromisso. No Brasil desde 2003, diversas iniciativas Stop Hunger têm sido realizadas de maneira consistente e com importantes contribuições. Com o objetivo de expandir sua atuação, em 2015 constitui-se o Instituto Stop Hunger no país. Uma Organização da Sociedade Civil de Interesse Público (OSCIP), sem fins lucrativos, que envolve os stakeholders da Sodexo, engajando colaboradores, clientes, usuários, estabelecimentos credenciados e fornecedores e membros da sociedade em geral, com o objetivo de fortalecer a nossa atuação na causa STOP Hunger no país e contribuir na melhoria da qualidade de vida de pessoas menos favorecidas.",
+      "Email": "stophunger@email.com",
+      "Telefone": "(99) 99999-3333",
+      "EnderecoCompleto": "Travessa da Solidariedade, n. 40, Centro, Cidade C, CEP: 33.333-33, UF",
+      "Imagem": "https://br.stop-hunger.org/files/live/sites/stophunger-br/files/images/logo.png"
+    },
+    {
+      "ID": 4,
+      "Nome": "Tem Gente com Fome",
+      "Descricao": "A Coalizão Negra Por Direitos retoma a campanha Tem Gente com Fome neste final de ano. Depois de arrecadar mais de R$25 milhões e conseguir levar alimento, roupas, kits de higiene e limpeza para mais de 100 mil famílias nos 27 estados do país, a campanha retorna com a urgência de ajudar o povo brasileiro nesse momento de ainda muita gravidade. Vamos juntos ativar nossa solidariedade e fortalecer a campanha TEM GENTE COM FOME NO NATAL ! ",
+      "Email": "temgentecomfome@email.com",
+      "Telefone": "(99) 99999-4444",
+      "EnderecoCompleto": "Rua da Esperança, n. 55, Bairro D, Cidade D, CEP: 44.444-44, UF",
+      "Imagem": "https://s3.amazonaws.com/hub-central/uploads/1670867584_Prancheta_1_copiar1.png"
+    },
+    {
+      "ID": 5,
+      "Nome": "Misturaí/Amparaí",
+      "Descricao": "O Instituto Misturaí é uma Organização da Sociedade Civil (OSC), sem fins lucrativos, com sede em Porto Alegre (RS). Começamos nossas ações em abril de 2018, com atividades pontuais. Nos institucionalizamos em 10 de abril de 2019, e construímos a nossa sede social na Vila Planetário, no mesmo ano.",
+      "Email": "amparai@email.com",
+      "Telefone": "(99) 99999-5555",
+      "EnderecoCompleto": "Avenida da Fraternidade, n. 70, Bairro E, Cidade E, CEP: 55.555-55, UF",
+      "Imagem": "https://misturai.com/wp-content/uploads/2021/03/logo-misturai-h.png"
+    },
+    {
+      "ID": 6,
+      "Nome": "Banco de Alimentos",
+      "Descricao": "Fundada em 1998, a ONG Banco de Alimentos é uma associação civil que recolhe alimentos que já perderam valor de prateleira no comércio e indústria, mas ainda estão aptos para consumo, e os distribui onde são mais necessários. No lugar de descartar legumes, massas, frutas, entre outros, os parceiros doam os excedentes à ONG que repassa tudo às entidades sociais cadastradas no projeto. Essa distribuição permite a complementação nutricional de refeições servidas para milhares de crianças, jovens, adultos e idosos na cidade de São Paulo, todos os dias.",
+      "Email": "bancodealimentos@email.com",
+      "Telefone": "(99) 99999-6666",
+      "EnderecoCompleto": "Rua da Generosidade, n. 85, Centro, Cidade F, CEP: 66.666-66, UF",
+      "Imagem": "https://bancodealimentos.org.br/wp-content/uploads/2020/08/cropped-logo-1.jpg"
+    },
+    {
+      "ID": 7,
+      "Nome": "Hamburgada do Bem",
+      "Descricao": "A hamburgada do bem é uma ong que nasceu em 2015, com intuito de levar amor diversão e informação para crianças em comunidades carentes. Hoje já atendeu quase 100 mil crianças em 4 países com mais de 50 mil voluntários participantes. Além do eventos mensais a Hamburgada do bem, atua no trabalho continuo com crianças e jovens de comunidades e já planeja seu primeiro instituto. Da hamburgada do bem surgiram diversos projetos como hamburgada na rua, sorriso de amor e fantástica fábrica de sonhos.",
+      "Email": "hamburgadadobem@email.com",
+      "Telefone": "(99) 99999-7777",
+      "EnderecoCompleto": "Travessa da Compaixão, n. 95, Bairro G, Cidade G, CEP: 77.777-77, UF",
+      "Imagem": "https://static.wixstatic.com/media/9f8b1c_05d6e8d150674a1086f6dec132d4de47~mv2.png/v1/fill/w_245,h_41,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/logohbhorizontal.png"
+    },
+    {
+      "ID": 8,
+      "Nome": "ActionAid",
+      "Descricao": "Somos uma organização internacional que trabalha por justiça social, equidade de gênero e étnico-racial e pelo fim da pobreza. Fomos fundados em 1972 e estamos presentes em 43 países, alcançando mais de 15 milhões de pessoas no mundo. No Brasil desde 1999, atuamos em mais de 2.4 mil comunidades e beneficiamos mais de 300 mil pessoas. Trabalhamos em parceria com comunidades e organizações locais em projetos de educação, agroecologia e clima, igualdade de gênero e participação e democracia. Clique aqui para saber mais sobre nossos 20 anos no Brasil.",
+      "Email": "actionaid@email.com",
+      "Telefone": "(99) 99999-8888",
+      "EnderecoCompleto": "Avenida da Solidariedade Global, n. 110, Bairro H, Cidade H, CEP: 88.888-88, UF",
+      "Imagem": "https://actionaid.org.br/wp-content/themes/actionaid/assets/img/logo.svg"
+    }
+  ]
+}

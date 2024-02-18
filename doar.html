@@ -14,15 +14,18 @@
         defer>
     <link rel="icon" type="image/png" href="/imgs/Logo Site.png" />
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>Compartilhe o Prato</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light border"">
         <div class="container-fluid">
             <img src="/imgs/Logo Site_SemFundo.png" alt="Logo.png">
-            <a class="navbar-brand" href="home.html">Compartilhe o Prato</a>
+            <a class="navbar-brand fs-2" href="home.html">Compartilhe o Prato</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -47,88 +50,103 @@
     <!-- Conteúdo -->
     <div class="container">
         <h1>Formulário para doação:</h1>
+        <button type="button" class="btn align-items-end d-flex" data-bs-toggle="offcanvas" data-bs-target="#painelDoacoes" id="btnVisualizarDoacoes">Veja algumas doações que foram realizadas pelo nosso site</button>
+
+        <div class="offcanvas offcanvas-end" id="painelDoacoes" tabindex="-1" style="--bs-offcanvas-width:90vw">
+            <div class="offcanvas-header">
+                <h3 class="display-6 offcanvas-title">Doações Efetuadas</h3>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <hr>
+            <div class="row row-cols-md-5 row-cols-1 p-3" id="lista-doacoes" style="max-height: 100%; overflow-y: auto;">
+                <!-- Aqui serão incluídas a lista de doacoes pelo JavaScript -->
+            </div>
+        </div>
         <hr>
         <form>
             <div class="">
                 <form>
                     <div class="mb-3">
-                        <label for="nome-doador" class="form-label">Doador</label>
-                        <input type="text" id="nome" class="form-control" placeholder="Seu nome ou Razão Social aqui..." required>
+                        <label for="doador" class="form-label">Doador</label>
+                        <input type="text" id="doador" class="form-control" placeholder="Seu nome ou Razão Social aqui..." autocomplete="name" required>
                     </div>
                     <div class="mb-3">
                         <label for="endereco" class="form-label">Endereço Completo</label>
-                        <textarea name="" id="endereco" class="form-control" placeholder="Seu Endereço completo, incluindo CEP..." required></textarea>
+                        <textarea name="" id="endereco" class="form-control" placeholder="Seu Endereço completo, incluindo CEP..." autocomplete="street-address" required></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail</label>
-                        <input type="email" id="email" class="form-control" placeholder="Seu endereço de e-mail..." required>
+                        <input type="email" id="email" class="form-control" placeholder="Seu endereço de e-mail..." autocomplete="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone</label>
-                        <input type="text" id="telefone" class="form-control" placeholder="Seu telefone de contato (xx) xxxxx-xxxx..." required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="receptor" class="form-label">Beneficiário</label>
-                        <select class="form-select" required>
-                            <option value="">Selecione para quem você deseja doar...</option>
-                            <option value="E1">Entidade01</option>
-                            <option value="E2">Entidade02</option>
-                            <option value="E3">Entidade03</option>
-                            <option value="E4">Entidade04</option>
-                            <option value="E5">Entidade05</option>
-                            <option value="E6">Entidade06</option>
-                            <option value="E7">Entidade07</option>
-                            <option value="E8">Entidade08</option>
-                        </select>
+                        <input type="text" id="telefone" class="form-control" placeholder="Seu telefone de contato (xx) xxxxx-xxxx..." autocomplete="tel" required>
                     </div>
                     <div class="row mb-3">
                         <div class="col-12 col-md-10">
-                                <label for="receptor" class="form-label">Alimento</label>
-                                <select class="form-select" required>
-                                    <option value="">Selecione o alimento que deseja doar...</option>
-                                    <option value="A1">Alimento01</option>
-                                    <option value="A2">Alimento02</option>
-                                    <option value="A3">Alimento03</option>
-                                    <option value="A4">Alimento04</option>
-                                    <option value="A5">Alimento05</option>
-                                    <option value="A6">Alimento06</option>
-                                    <option value="A7">Alimento07</option>
-                                    <option value="A8">Alimento08</option>
-                                </select>
+                            <label for="lista-instituicoes" class="form-label">Beneficiário</label>
+                            <select class="form-select" id="lista-instituicoes" required>
+                                <!-- Aqui serão inseridas as entidades -->
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-2 align-items-end d-flex">
+                            <span class="btn btn-primary w-100 mt-md-0 mt-3" data-bs-toggle="offcanvas" data-bs-target="#painelInstituicoes" id="btnConhecerInstituicoes">Conhecer Instituições</span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-10">
+                            <label for="lista-alimentos" class="form-label" onmouseover="exibirPopupImagemAlimento()">Alimento</label>
+                            <select class="form-select" id="lista-alimentos" required>
+                                <!-- Aqui serão inseridas as options dos alimentos -->
+                            </select>
                         </div>
                         <div class="col-12 col-md-2 align-items-end d-flex">
                             <span class="btn btn-primary w-100 mt-md-0 mt-3" data-bs-toggle="offcanvas" data-bs-target="#painel">Cadastrar Alimento</span>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="data" class="form-label">Data de Validade do Alimento</label>
-                        <input type="date" id="data" class="form-control">
+                        <label for="data-validade" class="form-label">Data de Validade do Alimento</label>
+                        <input type="date" id="data-validade" class="form-control">
                     </div>
                     <div class="mb-3">
-                        <label for="qtde-alimento" class="form-label">Quantidade que deseja doar</label>
-                        <input type="text" id="qtde" class="form-control" placeholder="Quantidade que você deseja doar..." required>
+                        <label for="qtde-alimento" class="form-label">Quantidade que deseja doar (KG)</label>
+                        <input type="text" id="qtde-alimento" class="form-control" placeholder="Quantidade que você deseja doar em KG..." required>
                     </div>
-                    <button type="submit" class="btn">Confirmar Doação</button>
+                    <button type="submit" class="btn" id="btnConfirmarDoacao">Confirmar Doação</button>
                 </form>
             </div>
         </form>
 
-        <div class="offcanvas offcanvas-end" id="painel" tabindex="-1" style="--bs-offcanvas-width:60vw">
+
+        <div class="offcanvas offcanvas-end" id="painelInstituicoes" tabindex="-1" style="--bs-offcanvas-width:90vw">
+            <div class="offcanvas-header">
+                <h3 class="display-6 offcanvas-title">Instituições Beneficiadas</h3>
+                <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <hr>
+            <div class="row row-cols-md-5 row-cols-1 offset-body p-3" id="lista-instituicoes-offcanvas">
+                <!-- Aqui serão incluídas as instituições pelo JavaScript -->
+            </div>
+        </div>
+
+
+        <div class="offcanvas offcanvas-end" id="painel" tabindex="-1" style="--bs-offcanvas-width:90vw">
             <div class="offcanvas-header">
                 <h3 class="display-6 offcanvas-title">Cadastro de Alimentos</h3>
                 <button class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
-            <form>
+            <hr>
+            <form action="button">
                 <div class="col-12 col-md-10 offcanvas-body">
                     <div class="mb-3">
                         <label for="nome-alimento" class="form-label">Descrição do Alimento</label>
-                        <input type="text" id="nome-alimento" class="form-control" placeholder="Nome do alimento..." required>
+                        <input type="text" id="nome-alimento" class="form-control" placeholder="Nome do alimento..." autocomplete="name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="link-img" class="form-label">Imagem do alimento (link)</label>
+                        <label for="link-img-alimento" class="form-label">Imagem do alimento (link)</label>
                         <input type="text" id="link-img-alimento" class="form-control" placeholder="Link da imagem do alimento..." required>
                     </div>
-                <button type="submit" class="btn">Cadastrar Alimento</button>
+                <button type="button" class="btn" id="btnCadastrarAlimento">Cadastrar Alimento</button>
             </form>
             </div>
         </div>
@@ -138,9 +156,9 @@
     <!-- Footer -->
     <div class="footer text-center mt-5">
         <div class="imagens">
-            <img src="/imgs/Ifes.png" alt="logo1">
-            <img src="/imgs/Act.png" alt="logo2">
-            <img src="/imgs/Reprogramese.png" alt="logo3">
+            <a href="https://www.ifes.edu.br/"><img src="/imgs/Ifes.png" alt="logo1"></a>
+            <a href="https://action.org.es/"><img src="/imgs/Act.png" alt="logo2"></a>
+            <a href="https://reprograme-se.org.br/"><img src="/imgs/Reprogramese.png" alt="logo3"></a>
         </div>
         <p class="mt-3">Todos os direitos reservados &copy - IFES 2024 - Pedro Dalvi Meriguete e Lázaro de Sousa.</p>
         Nos siga nas redes sociais:
@@ -153,5 +171,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
     defer></script>
-
+<script src="https://cdn.skypack.dev/date-fns@2.23.0"></script>
+<script src="JS/doar.js"></script>
 </html>

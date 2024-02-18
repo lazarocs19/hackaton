@@ -1,0 +1,29 @@
+{
+    "alimentos": [
+      {
+        "ID": 1,
+        "Nome": "Arroz",
+        "Imagem": ""
+      },
+      {
+        "ID": 2,
+        "Nome": "Feijão",
+        "Imagem": ""
+      },
+      {
+        "ID": 3,
+        "Nome": "Macarrão",
+        "Imagem": ""
+      },
+      {
+        "ID": 4,
+        "Nome": "Óleo",
+        "Imagem": ""
+      },
+      {
+        "ID": 5,
+        "Nome": "Trigo",
+        "Imagem": ""
+      }
+    ]
+}

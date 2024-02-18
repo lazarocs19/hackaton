@@ -14,15 +14,18 @@
         defer>
     <link rel="icon" type="image/png" href="/imgs/Logo Site.png" />
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     <title>Compartilhe o Prato</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light border">
         <div class="container-fluid">
             <img src="/imgs/Logo Site_SemFundo.png" alt="Logo.png">
-            <a class="navbar-brand" href="home.html">Compartilhe o Prato</a>
+            <a class="navbar-brand fs-2" href="home.html">Compartilhe o Prato</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -92,9 +95,10 @@
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-md-0 mt-5">
                 <div>
                     <h3>Como Funciona?</h3>
-                    <p>Por meio de nossa plataforma, você pode doar, em valor monetário, cestas de alimentos para
-                        organizações ou pessoas
-                        necessitadas, que se cadastraram e tiveram sua situação de vulnerabilidade comprovada.</p>
+                    <p>Por meio de nossa plataforma, você pode doar alimentos para organizações ou pessoas
+                        cadastradas. Você ainda pode doar um alimento que não temos cadastrado em nossa plataforma e tem a liberdade 
+                        para doar quanto puder, pois nós acreditamos que toda ajuda é bem-vinda!
+                    </p>
                 </div>
             </div>
         </div>
@@ -106,12 +110,8 @@
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mt-md-0 mt-5">
                 <div>
                     <h3>Conheça a iniciativa "Compense seu desperdício"</h3>
-                    <p>A iniciativa "Compense seu desperdício", tem por finalidade conscientizar o quão custoso é o
-                        desperdício de alimentos.
-                        Por meio dela, você pode simular e doar, em valor monetário, quanto você e sua família podem ter
-                        desperdiçado de
-                        alimentos durante um período pré-estabelecido, podendo assim reduzir esse desperdício e ainda
-                        ajudar quem mais precisa.</p>
+                    <p>Encontra-se em desenvolvimento a iniciativa "Compense seu desperdício", que terá por finalidade conscientizar o quão custoso é o
+                        desperdício de alimentos. Por meio dela, você poderá simular e doar, em valor monetário, quanto você e sua família podem ter desperdiçado de alimentos durante um período pré-estabelecido por você, podendo assim reduzir esse desperdício e ainda       ajudar quem mais precisa.</p>
                 </div>
             </div>
         </div>
@@ -133,20 +133,20 @@
         <hr>
         <div class="row m-md-5 m-1 p-4 p-md-5 rounded border shadow-lg depoimentos">
             <div class="col-6 text-center">
-                <h3>Fulano 1</h3>
-                <p>Amei! foi uma experiência incrível!</p>
+                <h3>Ação da Cidadania</h3>
+                <p>"Por meio da <i>Compartilhe o Prato</i> pudemos arrecadar uma quantidade de cestas básicas suficiente para ajudar mais de 100 famílias."</p>
             </div>
             <div class="col-6 text-center">
-                <h3>Fulano 2</h3>
-                <p>Depois de 213.129.192 dias finalmente tive minha refeição.</p>
+                <h3>Hamburgada do Bem</h3>
+                <p>"A <i>Compartilhe o Prato</i> tem nos ajudado muito em nosso projetos. Esse site é maravilhoso, muito intuitivo! Fica fácil para quem vai fazer as doações."</p>
             </div>
             <div class="col-6 mt-3 text-center">
-                <h3>Fulano 3</h3>
-                <p>Péssimo serviço.</p>
+                <h3>Instituto Stop Hunger</h3>
+                <p>"Vamos juntos acabar com o desperdício e com a fome no mundo! Nós acreditamos que juntos com a <i>Compartilhe o Prato</i> e todos os nossos colaboradores, estamos no caminho certo para alcançar tal objetivo."</p>
             </div>
             <div class="col-6 mt-3 text-center">
-                <h3>Fulano 4</h3>
-                <p>É melhor do que a comida da UFES.</p>
+                <h3>Misturaí/Amparaí</h3>
+                <p>"Saber que podemos contar com a <i>Compartilhe o Prato</i> para nos ajudar na arrecadação de alimentos é muito gratificante. Agradecemos a todos nosso colaboradores, sem vocês nosso trabalho não é possível!"</p>
             </div>
         </div>
 
@@ -158,30 +158,27 @@
 
         <form>
             <div class="">
-                <form>
+                <form class="needs-validation">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome Completo</label>
-                        <input type="text" id="nome" class="form-control" placeholder="Seu Nome Completo" required>
+                        <input type="text" id="nome" class="form-control" placeholder="Seu Nome Completo" novalidate>
                     </div>
                     <div class="mb-3">
                         <label for="assunto" class="form-label">Assunto</label>
-                        <select class="form-select" required>
+                        <select id="assunto" class="form-select assunto" novalidate>
                             <option value="">Selecione um assunto...</option>
-                            <option value="dep">Envio de depoimento</option>
-                            <option value="sug">Sugestões</option>
-                            <option value="duv">Dúvidas</option>
-                            <option value="rec">Reclamações</option>
+                            <option value="Envio de depoimento">Envio de depoimento</option>
+                            <option value="Sugestao">Sugestões</option>
+                            <option value="Duvidas">Dúvidas</option>
+                            <option value="Reclamacoes">Reclamações</option>
                         </select>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea name="" id="mensagem" class="form-control" placeholder="Sua Mensagem para Nós..." required></textarea>
+                        <textarea name="" id="mensagem" class="form-control" placeholder="Sua Mensagem para Nós..." novalidate></textarea>
                     </div>
-                    <!-- <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label"></label>
-                    </div> -->
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button id="botao" type="button" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </form>
@@ -190,9 +187,9 @@
     <!-- Footer -->
     <div class="footer text-center mt-5">
         <div class="imagens">
-            <img src="/imgs/Ifes.png" alt="logo1">
-            <img src="/imgs/Act.png" alt="logo2">
-            <img src="/imgs/Reprogramese.png" alt="logo3">
+            <a href="https://www.ifes.edu.br/"><img src="/imgs/Ifes.png" alt="logo1"></a>
+            <a href="https://action.org.es/"><img src="/imgs/Act.png" alt="logo2"></a>
+            <a href="https://reprograme-se.org.br/"><img src="/imgs/Reprogramese.png" alt="logo3"></a>
         </div>
         <p class="mt-3">Todos os direitos reservados &copy - IFES 2024 - Pedro Dalvi Meriguete e Lázaro de Sousa.</p>
         Nos siga nas redes sociais:
@@ -205,5 +202,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
     defer></script>
-<script src="/js/script.js"></script>
+<script src="JS/contato.js"></script>
 </html>
